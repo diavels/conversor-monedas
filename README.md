@@ -6,15 +6,15 @@ Con este sistema podremos realizar conversiones rapidas con opciones predetermin
 
 # Lista de Paises admitidos en el sistema
 
-Tenemos un total de 161 monedas de cambio para la conversion, entre las mas comunes tenemos:
-- AUD	/ Australian Dollar
-- ARS	Argentine Peso
-- BOB	Bolivian Boliviano
-- BRL	Brazilian Real
-- CLP	Chilean Peso
-- EUR	Euro
+Tenemos un total de 161 monedas de cambio para la conversion :dollar:, entre las mas comunes tenemos:
+- **AUD	/ Australian Dollar**
+- **ARS	/ Argentine Peso**
+- **BOB	/ Bolivian Boliviano**
+- **BRL	/ Brazilian Real**
+- **CLP	/ Chilean Peso**
+- **EUR	/ Euro**
 
-Si desea ver la lista completa de monedas compatibles, puede ingresar al siguiente enlace:
+**Si desea ver la lista completa de monedas compatibles, puede ingresar al siguiente enlace:**
 - https://www.exchangerate-api.com/docs/supported-currencies
 
 
@@ -35,13 +35,13 @@ Finalmente para poder hacer uso de la interfaz, haz click en run y aparecera la 
 
 <img src="imagenes/imagen1.png">
 
-*En esta imagen podemos ver como se solicita la API_KEY, luego de ingresarla podra hacer uso del menu principal*
+*En esta imagen podemos ver como se solicita la API_KEY :key:, luego de ingresarla podra hacer uso del menu principal*
 
 <img src="imagenes/imagen2.png">
 
-*Aqui podemos observar como tenemos opciones predeterminadas y una opcion libre para elegir cualquier moneda de las 161 disponibles en la pagina.*
+**Aqui podemos observar como tenemos opciones predeterminadas y una opcion libre para elegir cualquier moneda de las 161 disponibles en la pagina.**
 
-Finalmente se elige el monto de conversion y el sistema generara un mensaje con el valor exacto segun la utlima actualizacion del sistema.
+**Finalmente se elige el monto de conversion**dolar:Dolar: y el sistema generara un mensaje con el valor exacto segun la utlima actualizacion del sistema.**
 
 
 <img src="imagenes/conversion.gif">

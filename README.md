@@ -33,15 +33,15 @@ Para iniciar lo primero que debes hacer es generar tu API_KEY directo desde la p
 
 Finalmente para poder hacer uso de la interfaz, haz click en run y aparecera la siguiente interfaz.
 
-![imagen1]
+![imagen1](imagenes/imagen1.png)
 
 *En esta imagen podemos ver como se solicita la API_KEY, luego de ingresarla podra hacer uso del menu principal*
 
-![imagen2]
+![imagen2](imagenes/imagen2.png)
 
 *Aqui podemos observar como tenemos opciones predeterminadas y una opcion libre para elegir cualquier moneda de las 161 disponibles en la pagina.*
 
 Finalmente se elige el monto de conversion y el sistema generara un mensaje con el valor exacto segun la utlima actualizacion del sistema.
 
-![gift1]
+![gift1](imagenes/conversion.gif)
 

@@ -21,6 +21,7 @@ public class ConsultaValor {
         double valormonedaCambio = 0;
         String consulta = "ingrese el valor que desea convertir";
         double ratioCambio;
+        String miclave = "";
 
         List<formatoConversion> listaConsulta = new ArrayList<>();
 
@@ -42,6 +43,14 @@ public class ConsultaValor {
                 *******************************************
                 """);
 
+        System.out.println("""
+                
+                Ingresa tu API_KEY para acceder al sistema
+              
+                """);
+
+        miclave = teclado.nextLine();
+
         while (true) {
             System.out.println("""
                     *****************************
@@ -60,10 +69,10 @@ public class ConsultaValor {
                     """);
 
             //interaccion con el usuario
-            int mensaje = teclado.nextInt();
+             int mensaje1 = teclado.nextInt();
 
             //asigna los valores a las opciones ingresadas
-            switch (mensaje) {
+            switch (mensaje1) {
                 case 1:
                     moneda1 = "USD";
                     moneda2 = "CLP";
@@ -114,11 +123,11 @@ public class ConsultaValor {
             }
 
             //condicion de salida
-            if (mensaje == 7) {
+            if (mensaje1 == 7) {
                 break;
             }
 
-            String direccion = "https://v6.exchangerate-api.com/v6//pair/" + moneda1 + "/" + moneda2;
+            String direccion = "https://v6.exchangerate-api.com/v6/"+miclave+"/pair/" + moneda1 + "/" + moneda2;
 
             try {
                 //sistema http client, request y response

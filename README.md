@@ -41,7 +41,6 @@ Finalmente para poder hacer uso de la interfaz, haz click en run y aparecera la 
 
 **Aqui podemos observar como tenemos opciones predeterminadas y una opcion libre para elegir cualquier moneda de las 161 disponibles en la pagina.**
 
-**Finalmente se elige el monto de conversion**dolar:Dolar: y el sistema generara un mensaje con el valor exacto segun la utlima actualizacion del sistema.**
-
-
 <img src="imagenes/conversion.gif">
+
+**Finalmente se elige el monto de conversion :dollar: y el sistema generara un mensaje con el valor exacto segun la utlima actualizacion del sistema.**

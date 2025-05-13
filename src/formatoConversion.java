@@ -4,6 +4,11 @@ public class formatoConversion {
     private String monedaCambio;
     private double valorMoneda;
     private String ultimaActualizacion;
+    private String clave = "7b436f12c1ca0d225a75c481";
+
+    public String getClave() {
+        return clave;
+    }
 
     public formatoConversion(valoresJson formato) {
         this.monedaBase = formato.base_code();
@@ -30,6 +35,9 @@ public class formatoConversion {
 
     @Override
     public String toString() {
+
+
+
         return "(Informacion de la Conversion: " +
                "monedaBase= " + monedaBase +
                ", monedaCambio= " + monedaCambio +

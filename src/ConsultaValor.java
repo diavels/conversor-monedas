@@ -20,7 +20,8 @@ public class ConsultaValor {
         String moneda2 = "";
         double valormonedaCambio = 0;
         String consulta = "ingrese el valor que desea convertir";
-        double ratioCambio = 0;
+        double ratioCambio;
+
         List<formatoConversion> listaConsulta = new ArrayList<>();
 
         //llamada de scanner
@@ -34,7 +35,8 @@ public class ConsultaValor {
         //sistema de menu, debe conetener opciones predeterminadas y
         // una opcion para ingresar de forma manual dos monedas
         System.out.println("""
-                ******************************************\n
+                ******************************************
+                
                     \033[4mBienvenidos al sistema de conversion de monedas\033[0m
                 
                 *******************************************
@@ -53,7 +55,8 @@ public class ConsultaValor {
                     6. Eleccion libre
                     7. salir
                     
-                    ******************************\n
+                    ******************************
+                    
                     """);
 
             //interaccion con el usuario
@@ -110,10 +113,12 @@ public class ConsultaValor {
 
             }
 
+            //condicion de salida
             if (mensaje == 7) {
                 break;
             }
-            String direccion = "https://v6.exchangerate-api.com/v6/7b436f12c1ca0d225a75c481/pair/" + moneda1 + "/" + moneda2;
+
+            String direccion = "https://v6.exchangerate-api.com/v6//pair/" + moneda1 + "/" + moneda2;
 
             try {
                 //sistema http client, request y response
@@ -138,11 +143,11 @@ public class ConsultaValor {
                 valoresJson misvalores = gson.fromJson(json, valoresJson.class);
                 formatoConversion miconsulta = new formatoConversion(misvalores);
 
-                listaConsulta.add(miconsulta);
-
 
                 System.out.println("el valor de " + valormonedaCambio + "[" + moneda1 + "]" + "corresponde al valor final de: " +
                         monedaConversion + "[" + moneda2 + "]");
+
+                listaConsulta.add(miconsulta);
 
                 FileWriter documento = new FileWriter("lista de conversiones.txt");
                 documento.write(gson.toJson(listaConsulta));
@@ -155,7 +160,8 @@ public class ConsultaValor {
 
         //mensaje de despedida
         System.out.println("""
-                        **********************************************\n
+                        **********************************************
+                        
                             \033[4mGracias por utilizar el sistema\033[0m
                                 \033[4mde conversion de monedas\033[0m
                         

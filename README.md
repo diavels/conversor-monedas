@@ -30,6 +30,7 @@ Para iniciar lo primero que debes hacer es generar tu API_KEY directo desde la p
 - https://www.exchangerate-api.com
 
 **Luego debemos descargar el repositorio y abrirlo con algun IDE de tu conveniencia (se sugiere el uso de Intellij Idea)**
+**Se debe realizar la instalacion de la biblioteca Gson para evitar errores**
 
 Finalmente para poder hacer uso de la interfaz, haz click en run y aparecera la siguiente interfaz.
 
